@@ -3,18 +3,22 @@
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  @media(max-width: map-get($map: $grid-breakpoints, $key:xxl)) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media(max-width: map-get($map: $grid-breakpoints, $key:lg)) {
-    grid-template-columns: 1fr;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
+.cards {
+  width: calc((100% / 3) - 10px);
+
+  @media screen and (max-width: map-get($map: $grid-breakpoints, $key:xxl)) {
+    width: calc((100% / 2) - 10px);
+  }
+
+  @media screen and (max-width: map-get($map: $grid-breakpoints, $key:lg)) {
+    width: 100%;
+  }
+}
 .card {
   position: relative;
   background: #fff;
@@ -28,47 +32,47 @@
 
   &--\#f8c31c {
     @extend .card;
-    border: 1px solid #f8c31c;
+    border: 0.15rem solid #f8c31c;
   }
 
   &--\#6dc8bf {
     @extend .card;
-    border: 1px solid #6dc8bf;
+    border: 0.15rem solid #6dc8bf;
   }
 
   &--\#b0bb36 {
     @extend .card;
-    border: 1px solid #b0bb36;
+    border: 0.15rem solid #b0bb36;
   }
 
   &--\#f3a123 {
     @extend .card;
-    border: 1px solid #f3a123;
+    border: 0.15rem solid #f3a123;
   }
 
   &--\#67a6dc {
     @extend .card;
-    border: 1px solid #67a6dc;
+    border: 0.15rem solid #67a6dc;
   }
 
   &--\#f30b6f {
     @extend .card;
-    border: 1px solid #f30b6f;
+    border: 0.15rem solid #f30b6f;
   }
 
   &--\#c0c0c0 {
     @extend .card;
-    border: 1px solid #c0c0c0;
+    border: 0.15rem solid #c0c0c0;
   }
 
   &--\#823cbe {
     @extend .card;
-    border: 1px solid #823cbe;
+    border: 0.15rem solid #823cbe;
   }
 
   &--\#bf1224 {
     @extend .card;
-    border: 1px solid #bf1224;
+    border: 0.15rem solid #bf1224;
   }
 }
 
@@ -76,6 +80,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+img {
+  @media(max-width: map-get($map: $grid-breakpoints, $key:sm)) {
+    min-width: 180px;
+    min-width: 180px;
+    height:60%;
+    width: 60%;
+  }
 }
 
 .cardFooter {

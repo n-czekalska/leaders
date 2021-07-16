@@ -3,7 +3,7 @@
     {{ data.title }}
   </h1>
   <div class="wrapper">
-    <div *ngFor="let leader of data.leaders">
+    <div class="cards" *ngFor="let leader of data.leaders">
       <leader-component [leader]="leader"></leader-component>
     </div>
   </div>

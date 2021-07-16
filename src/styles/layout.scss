@@ -1,9 +1,6 @@
+
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
+    margin: 5rem auto;
 }
 
 @media(min-width: map-get($map: $grid-breakpoints, $key:md)) {
