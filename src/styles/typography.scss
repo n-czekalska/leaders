@@ -1,0 +1,45 @@
+
+body {
+   font-family: $font-family-avenir;
+   font-size: $font-size-base;
+}
+
+.heading1 {
+  @media(max-width: map-get($map: $grid-breakpoints, $key:lg)) {
+    font-size: $h1-font-size-s;
+  }
+  font-size: $h1-font-size;
+}
+
+.heading2 {
+  @media(max-width: map-get($map: $grid-breakpoints, $key:lg)) {
+    font-size: $h2-font-size-s;
+  }
+  font-size: $h2-font-size;
+}
+
+.heading3 {
+  @media(max-width: map-get($map: $grid-breakpoints, $key:lg)) {
+    font-size: $h3-font-size-s;
+  }
+  font-size: $h3-font-size;
+}
+
+.heading4 {
+  @media(max-width: map-get($map: $grid-breakpoints, $key:lg)) {
+    font-size: $h4-font-size-s;
+  }
+  font-size: $h4-font-size;
+}
+
+.paragraph {
+  @media(max-width: map-get($map: $grid-breakpoints, $key:lg)) {
+    font-size: $p-font-size-s;
+  }
+  font-size: $p-font-size;
+  line-height: 1.4;
+}
+
+.title {
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+@media(min-width: map-get($map: $grid-breakpoints, $key:md)) {
+  .container {
+    width: map-get($map: $container-max-widths, $key:md);
+  }
+}
+
+@media(min-width: map-get($map: $grid-breakpoints, $key:lg)) {
+  .container {
+    width: map-get($map: $container-max-widths, $key:lg);
+  }
+}
+
+@media(min-width: map-get($map: $grid-breakpoints, $key:xl)) {
+  .container {
+    width: map-get($map: $container-max-widths, $key:xl);
+  }
+}
+
+@media(min-width: map-get($map: $grid-breakpoints, $key:xxl)) {
+  .container {
+    width: map-get($map: $container-max-widths, $key:xxl);
+  }
+}
