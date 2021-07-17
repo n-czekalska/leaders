@@ -10,7 +10,7 @@
       <img class="portrait" src="{{leader.image.url}}" alt="{{leader.image.alt}}">
     </div>
     <p class="heading4 subtitle gray-underline">{{traitsTitle}}</p>
-    <ul *ngFor="let description of descriptions; let i=index">
-      <li class="{{description.cssClass}}"> <button class="button">{{i+1}}</button> {{description.text}}</li>
+    <ul *ngFor="let description of descriptions">
+      <li class="{{description.cssClass}}"> <button class="button"></button> {{description.text}}</li>
     </ul>
   </div>

@@ -22,7 +22,7 @@
 
 .list-item {
   list-style: none;
-  line-height: 1.6;
+  line-height: 1rem;
 }
 
 li .button {
@@ -30,10 +30,10 @@ li .button {
   z-index: 2;
   box-sizing: border-box;
   float: left;
-  width: 25px;
-  height: 25px;
+  width: 5px;
+  height: 10px;
   border: 2px solid fade-out($gray, .7);
   border-radius: 50%;
-  background-color: transparent;
-  margin-right: 15px;
+  background-color: $gray;
+  margin-right: 10px;
 }
