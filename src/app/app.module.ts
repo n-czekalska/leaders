@@ -6,11 +6,13 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 import { LeaderComponent } from "./leader/leader.component";
+import { LeaderDetailsComponent } from "./leader-details/leader-details.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeaderComponent
+    LeaderComponent,
+    LeaderDetailsComponent
   ],
   imports: [
     BrowserModule,

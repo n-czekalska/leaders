@@ -2,11 +2,12 @@
   <h1 class="{{data.titleClass}} title">
     {{ data.title }}
   </h1>
-  <div class="wrapper">
+  <div *ngIf="!showDetails" class="wrapper">
     <div class="cards" *ngFor="let leader of data.leaders">
-      <leader-component [leader]="leader"></leader-component>
+      <leader-component [leader]="leader" (displayLeader)="displayLeader($event)"></leader-component>
     </div>
   </div>
+  <div *ngIf="showDetails">
+      <leader-details [leader]="selectedLeader" (displayAll)="displayAll($event)"></leader-details>
+  </div>
 </div>
-
-<router-outlet></router-outlet>

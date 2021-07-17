@@ -5,7 +5,6 @@
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .cards {
@@ -21,58 +20,54 @@
 }
 .card {
   position: relative;
-  background: #fff;
+  background: $white;
   overflow: hidden;
   padding: 20px;
   margin: 20px 10px;
 
-  @media(max-width: map-get($map: $grid-breakpoints, $key:md)) {
-    flex-direction: column;
-  }
-
   &--\#f8c31c {
     @extend .card;
-    border: 0.15rem solid #f8c31c;
+    border: 0.15rem solid $yellow;
   }
 
   &--\#6dc8bf {
     @extend .card;
-    border: 0.15rem solid #6dc8bf;
+    border: 0.15rem solid $teal;
   }
 
   &--\#b0bb36 {
     @extend .card;
-    border: 0.15rem solid #b0bb36;
+    border: 0.15rem solid $grass;
   }
 
   &--\#f3a123 {
     @extend .card;
-    border: 0.15rem solid #f3a123;
+    border: 0.15rem solid $orange;
   }
 
   &--\#67a6dc {
     @extend .card;
-    border: 0.15rem solid #67a6dc;
+    border: 0.15rem solid $blue;
   }
 
   &--\#f30b6f {
     @extend .card;
-    border: 0.15rem solid #f30b6f;
+    border: 0.15rem solid $pink;
   }
 
   &--\#c0c0c0 {
     @extend .card;
-    border: 0.15rem solid #c0c0c0;
+    border: 0.15rem solid $gray;
   }
 
   &--\#823cbe {
     @extend .card;
-    border: 0.15rem solid #823cbe;
+    border: 0.15rem solid $purple;
   }
 
   &--\#bf1224 {
     @extend .card;
-    border: 0.15rem solid #bf1224;
+    border: 0.15rem solid $red;
   }
 }
 
@@ -80,6 +75,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media(max-width: map-get($map: $grid-breakpoints, $key:md)) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 img {
@@ -93,66 +92,6 @@ img {
 
 .cardFooter {
   margin: 30px 0 10px 0;
-}
-
-.button-link {
-  color: black;
-  background-size: 0% 100%;
-  background-repeat: no-repeat;
-  text-decoration: none;
-  transition: background-size .4s ease;
-  font-size: $h4-font-size;
-  padding: 5px 0;
-
-  &--\#f8c31c {
-    @extend .button-link;
-    background-image: linear-gradient(to bottom, transparent 65%, #f8c31c 0);
-  }
-
-  &--\#6dc8bf {
-    @extend .button-link;
-    background-image: linear-gradient(to bottom, transparent 65%, #6dc8bf 0);
-  }
-
-  &--\#b0bb36 {
-    @extend .button-link;
-    background-image: linear-gradient(to bottom, transparent 65%, #b0bb36 0);
-  }
-
-  &--\#f3a123 {
-    @extend .button-link;
-    background-image: linear-gradient(to bottom, transparent 65%, #f3a123 0);
-  }
-
-  &--\#67a6dc {
-    @extend .button-link;
-    background-image: linear-gradient(to bottom, transparent 65%, #67a6dc 0);
-  }
-
-  &--\#f30b6f {
-    @extend .button-link;
-    background-image: linear-gradient(to bottom, transparent 65%, #f30b6f 0);
-  }
-
-  &--\#c0c0c0 {
-    @extend .button-link;
-    background-image: linear-gradient(to bottom, transparent 65%, #c0c0c0 0);
-  }
-
-  &--\#823cbe {
-    @extend .button-link;
-    background-image: linear-gradient(to bottom, transparent 65%, #823cbe 0);
-  }
-
-  &--\#bf1224 {
-    @extend .button-link;
-    background-image: linear-gradient(to bottom, transparent 65%, #bf1224 0);
-  }
-}
-
-.button-link:hover {
-  background-size: 100% 100%;
-  cursor: pointer;
 }
 
 .right {

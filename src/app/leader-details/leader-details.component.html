@@ -1,0 +1,9 @@
+  <button class="button-link button-back" (click)="back()">
+    <img class="icon"src="assets/back.svg" alt="back icon">
+    Back</button>
+  <p class="heading3 title">{{title}}</p>
+  <p class="paragraph">{{paragraph}}</p>
+  <p class="heading4">{{traitsTitle}}</p>
+  <ul *ngFor="let description of descriptions">
+    <li class="">{{description}}</li>
+  </ul>

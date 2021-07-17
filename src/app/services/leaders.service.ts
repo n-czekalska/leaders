@@ -24,7 +24,6 @@ export class LeadersService {
   get(): Promise<LeadersResponse> {
     this.api = Prismic.client(this.baseURL, this.getOptions());
     return this.api.getByUID(this.documentType, this.documentUID, this.getQueryOptions()).then((response) => {
-      console.log("Documents: ", response);
       return this.mapToResponse(response.data);
     });
 

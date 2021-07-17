@@ -1,0 +1,70 @@
+.button-link {
+  border: 0;
+  background-color: transparent;
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  transition: background-size .4s ease;
+  font-size: $h4-font-size;
+  padding: 5px 0;
+
+  &--\#f8c31c {
+    @extend .button-link;
+    background-image: linear-gradient(to bottom, transparent 65%, $yellow 0);
+  }
+
+  &--\#6dc8bf {
+    @extend .button-link;
+    background-image: linear-gradient(to bottom, transparent 65%, $teal 0);
+  }
+
+  &--\#b0bb36 {
+    @extend .button-link;
+    background-image: linear-gradient(to bottom, transparent 65%, $grass 0);
+  }
+
+  &--\#f3a123 {
+    @extend .button-link;
+    background-image: linear-gradient(to bottom, transparent 65%, $orange 0);
+  }
+
+  &--\#67a6dc {
+    @extend .button-link;
+    background-image: linear-gradient(to bottom, transparent 65%, $blue 0);
+  }
+
+  &--\#f30b6f {
+    @extend .button-link;
+    background-image: linear-gradient(to bottom, transparent 65%, $pink 0);
+  }
+
+  &--\#c0c0c0 {
+    @extend .button-link;
+    background-image: linear-gradient(to bottom, transparent 65%, $gray 0);
+  }
+
+  &--\#823cbe {
+    @extend .button-link;
+    background-image: linear-gradient(to bottom, transparent 65%, $purple 0);
+  }
+
+  &--\#bf1224 {
+    @extend .button-link;
+    background-image: linear-gradient(to bottom, transparent 65%, $red 0);
+  }
+}
+
+.button-link:hover {
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.icon {
+    height: 20px;
+    width: auto;
+}
+
+.button-back {
+  border-bottom: 2px solid $pink;
+  margin-bottom: 20px;
+}

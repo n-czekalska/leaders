@@ -4,9 +4,6 @@
     <img src="{{leader.image.url}}" alt="{{leader.image.alt}}">
   </div>
   <div class="cardFooter">
-    <a href="#" class="button-link--{{leader.colour}} right">READ MORE</a>
+    <button class="button-link--{{leader.colour}} right" (click)="showDetails(leader)">READ MORE</button>
   </div>
-  <!-- <ul *ngFor="let description of leader.description">
-      <li class="{{description.cssClass}}">{{description.text}}</li>
-    </ul> -->
 </div>

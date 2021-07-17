@@ -9,7 +9,6 @@ body {
     font-size: $h1-font-size-s;
   }
   font-size: $h1-font-size;
-  text-transform: uppercase;
 }
 
 .heading2 {
@@ -43,6 +42,7 @@ body {
 
 .title {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .bold {

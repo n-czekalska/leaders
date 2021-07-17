@@ -1,14 +1,17 @@
 import { Leader } from "../models/leader";
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, Input, Output } from "@angular/core";
+import { EventEmitter } from "@angular/core";
 
 @Component({
   selector: "leader-component",
   templateUrl: "./leader.component.html",
 })
-export class LeaderComponent implements OnInit {
+export class LeaderComponent {
   @Input() leader: Leader;
+  @Output() displayLeader: EventEmitter<Leader> = new EventEmitter();
 
-  ngOnInit(): void {
-    this.leader
+  showDetails(leader: Leader): void {
+    this.displayLeader.emit(leader);
   }
+
 }

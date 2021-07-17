@@ -8,11 +8,23 @@
   font-style: normal;
 }
 
+$yellow: #f8c31c;
+$teal: #6dc8bf;
+$grass: #b0bb36;
+$orange: #f3a123;
+$blue: #67a6dc;
+$pink: #f30b6f;
+$gray: #c0c0c0;
+$purple: #823cbe;
+$red: #bf1224;
+$black: #000;
+$white: #fff;
+
 $font-family-avenir: "Avenir LT Book";
 
 $font-size-base: 1rem;
 
-$h1-font-size: $font-size-base * 3;
+$h1-font-size: $font-size-base * 3.75;
 $h2-font-size: $font-size-base * 2.5;
 $h3-font-size: $font-size-base * 2;
 $h4-font-size: $font-size-base * 1.6;
