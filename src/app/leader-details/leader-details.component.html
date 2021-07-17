@@ -11,6 +11,6 @@
     </div>
     <p class="heading4 subtitle gray-underline">{{traitsTitle}}</p>
     <ul *ngFor="let description of descriptions">
-      <li class="{{description.cssClass}}"> <button class="button"></button> {{description.text}}</li>
+      <li class="{{description.cssClass}}"> <button class="button--{{leader.colour}}"></button> {{description.text}}</li>
     </ul>
   </div>

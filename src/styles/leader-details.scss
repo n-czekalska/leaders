@@ -30,10 +30,54 @@ li .button {
   z-index: 2;
   box-sizing: border-box;
   float: left;
-  width: 5px;
+  width: 16px;
   height: 16px;
-  border: 2px solid fade-out($gray, .7);
   border-radius: 50%;
-  background-color: $gray;
   margin-right: 10px;
+  border: 0;
+
+  &--\#f8c31c {
+    @extend .button;
+    background-color: $yellow;
+  }
+
+  &--\#6dc8bf {
+    @extend .button;
+    background-color:$teal;
+  }
+
+  &--\#b0bb36 {
+    @extend .button;
+    background-color:$grass;
+  }
+
+  &--\#f3a123 {
+    @extend .button;
+    background-color:$orange;
+  }
+
+  &--\#67a6dc {
+    @extend .button;
+    background-color:$blue;
+  }
+
+  &--\#f30b6f {
+    @extend .button;
+    background-color:$pink;
+  }
+
+  &--\#c0c0c0 {
+    @extend .button;
+    background-color:$gray;
+  }
+
+  &--\#823cbe {
+    @extend .button;
+    background-color:$purple;
+  }
+
+  &--\#bf1224 {
+    @extend .button;
+    background-color:$red;
+  }
 }
