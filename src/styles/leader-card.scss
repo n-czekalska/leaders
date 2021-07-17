@@ -5,6 +5,7 @@
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .cards {
@@ -24,6 +25,7 @@
   overflow: hidden;
   padding: 20px;
   margin: 20px 10px;
+  box-shadow: 1rem 1rem .5rem rgba(0, 0, 0, 0.15);
 
   &--\#f8c31c {
     @extend .card;
@@ -81,7 +83,7 @@
   }
 }
 
-img {
+.portrait {
   @media(max-width: map-get($map: $grid-breakpoints, $key:sm)) {
     min-width: 180px;
     min-width: 180px;
@@ -92,8 +94,4 @@ img {
 
 .cardFooter {
   margin: 30px 0 10px 0;
-}
-
-.right {
-  float: right
 }

@@ -1,6 +1,12 @@
 # Angular Project - Character scope 9 leaders
 
-# Running app
+## Requirements:
+
+* Npm,
+* Node,
+* Typescript
+
+## Running app
 
 * Run npm install to install all dependencies,
 

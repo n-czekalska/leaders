@@ -1,8 +1,8 @@
 <div class="container" *ngIf="leadersData$ | async as data">
-  <h1 class="{{data.titleClass}} title">
+  <header class="{{data.titleClass}} title gray-underline">
     {{ data.title }}
-  </h1>
-  <div *ngIf="!showDetails" class="wrapper">
+  </header>
+  <div *ngIf="!showDetails" class=" wrapper">
     <div class="cards" *ngFor="let leader of data.leaders">
       <leader-component [leader]="leader" (displayLeader)="displayLeader($event)"></leader-component>
     </div>

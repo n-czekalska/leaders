@@ -60,11 +60,27 @@
 }
 
 .icon {
-    height: 20px;
-    width: auto;
+  height: 20px;
+  width: 20px;
 }
 
 .button-back {
   border-bottom: 2px solid $pink;
   margin-bottom: 20px;
+}
+
+.pink-underline {
+  border-bottom: 1px solid rgba($pink, .5);
+}
+
+.gray-underline {
+  border-bottom: 2px solid rgba($gray, .5);
+}
+
+.right {
+  float: right
+}
+
+.left {
+  float: left
 }

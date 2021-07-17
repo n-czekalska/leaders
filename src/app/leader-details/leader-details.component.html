@@ -1,9 +1,17 @@
-  <button class="button-link button-back" (click)="back()">
-    <img class="icon"src="assets/back.svg" alt="back icon">
+  <button class="button-link button-back pink-underline" (click)="back()">
+    <img class="icon" src="assets/back.svg" alt="back icon">
     Back</button>
-  <p class="heading3 title">{{title}}</p>
-  <p class="paragraph">{{paragraph}}</p>
-  <p class="heading4">{{traitsTitle}}</p>
-  <ul *ngFor="let description of descriptions">
-    <li class="">{{description}}</li>
-  </ul>
+      <div class="cardBack">
+  <div class="header">
+    <div>
+      <p class="heading3 title">{{title}}</p>
+      <p class="paragraph">{{paragraph}}</p>
+    </div>
+    <img class="portrait" src="{{leader.image.url}}" alt="{{leader.image.alt}}">
+  </div>
+
+    <p class="heading4 subtitle pink-underline">{{traitsTitle}}</p>
+    <ul *ngFor="let description of descriptions">
+      <li class="{{description.cssClass}}"> <button class="button"></button> {{description.text}}</li>
+    </ul>
+  </div>

@@ -1,7 +1,7 @@
 <div class="card--{{leader.colour}}" *ngIf="leader">
   <div class="card-content">
     <p class="{{leader.nameClass}} bold">{{leader.name}}</p>
-    <img src="{{leader.image.url}}" alt="{{leader.image.alt}}">
+    <img class="portrait" src="{{leader.image.url}}" alt="{{leader.image.alt}}">
   </div>
   <div class="cardFooter">
     <button class="button-link--{{leader.colour}} right" (click)="showDetails(leader)">READ MORE</button>

@@ -1,12 +1,11 @@
 @font-face {
-  font-family: "Avenir LT Book";
-  src: url("../assets/AvenirLT-Book.eot");
+  font-family: "Avenir LT Book";  src: url("../assets/AvenirLT-Book.eot");
   src: url("../assets/AvenirLT-Book.eot?#iefix") format("embedded-opentype"),
     url("../assets/AvenirLT-Book.woff") format("woff"),
     url("../assets/AvenirLT-Book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Zilla+Slab:300,400');
 
 $yellow: #f8c31c;
 $teal: #6dc8bf;
@@ -21,6 +20,8 @@ $black: #000;
 $white: #fff;
 
 $font-family-avenir: "Avenir LT Book";
+
+$font-family-zilla: 'zilla slab', serif;
 
 $font-size-base: 1rem;
 
