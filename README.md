@@ -1,6 +1,6 @@
 # Angular Project - Character scope 9 leaders
 
-## Requirements:
+## Requirements
 
 * Npm,
 * Node,
