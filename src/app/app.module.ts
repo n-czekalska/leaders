@@ -16,8 +16,7 @@ import { LeaderDetailsComponent } from "./leader-details/leader-details.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
+    AppRoutingModule
     
   ],
   providers: [
