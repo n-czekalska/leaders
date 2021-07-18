@@ -26,8 +26,4 @@ export class LeaderDetailsComponent implements OnInit {
     back(): void {
         this.displayAll.emit(true);
     }
-
-    getColour(leader: Leader): string {
-        return leader.colour;  
-    }
 }
